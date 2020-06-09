@@ -72,9 +72,9 @@ public class SAXParser {
             factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
             // TODO investigate this
 //            factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
-            factory.setXIncludeAware(false);
+//            factory.setXIncludeAware(false);
 
-            factory.setNamespaceAware(true);
+//            factory.setNamespaceAware(true);
 
             if (getSchemaSources() != null) {
                 factory.setSchema(createSchema(getSchemaSources()));
