@@ -70,7 +70,8 @@ public class SAXParser {
             // Configure factory to prevent XXE attacks
             factory.setFeature("http://xml.org/sax/features/external-general-entities", false);
             factory.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
-            factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
+            // TODO investigate this
+//            factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
             factory.setXIncludeAware(false);
 
             factory.setNamespaceAware(true);
