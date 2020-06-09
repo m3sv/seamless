@@ -59,19 +59,12 @@
         </developer>
     </developers>
 
-    <distributionManagement>
-        <repository>
-            <id>4thline.org</id>
-            <url>scpexe://4thline/data/website/docroot/m2/</url>
-        </repository>
-    </distributionManagement>
-
     <!-- ##################################################################################################### -->
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>5</maven.compiler.source>
-        <maven.compiler.target>5</maven.compiler.target>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
 
         <testng.version>6.2</testng.version>
         <servlet.api.version>2.4</servlet.api.version>
@@ -86,32 +79,7 @@
 
     </properties>
 
-    <!-- ##################################################################################################### -->
-
-    <repositories>
-        <repository>
-            <id>4thline-repo</id>
-            <url>http://4thline.org/m2</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-            <id>4thline-repo</id>
-            <url>http://4thline.org/m2</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
-    <!-- ##################################################################################################### -->
-
     <build>
-
         <pluginManagement>
             <plugins>
 
